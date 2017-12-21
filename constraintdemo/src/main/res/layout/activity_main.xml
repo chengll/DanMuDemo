@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.dmdfchina.com.constraintdemo.MainActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="120dp"
+        android:layout_height="87dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="#8512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#116266"
+        android:gravity="center_vertical"
+        android:text="你好,我是文章的标题"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="#2121"
+        android:text="我是时间部分"
+        android:textColor="#a31"
+        app:layout_constraintBottom_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toRightOf="@id/text1" />
+
+</android.support.constraint.ConstraintLayout>
